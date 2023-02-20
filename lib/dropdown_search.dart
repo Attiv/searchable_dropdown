@@ -354,7 +354,8 @@ class DropdownSearchState<T> extends State<DropdownSearch<T>> {
       }
       return Container(
         height: (widget.height ?? 56) - 24.0,
-        child: Center(
+        child: Align(
+          alignment: Alignment.centerLeft,
           child: Text(
             _selectedItemAsString(getSelectedItem),
             style: widget.dropdownDecoratorProps.baseStyle,
